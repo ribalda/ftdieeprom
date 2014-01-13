@@ -1,0 +1,15 @@
+Read and Write the eeprom of an ftdi device.
+
+COMPILE
+--------
+-Install libftdi on your system
+-Run make
+
+
+USE
+---
+Read eeprom
+./ftdieeprom R kk.hex
+
+Write eeprom
+./ftdieeprom W kk.hex
