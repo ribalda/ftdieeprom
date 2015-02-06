@@ -13,3 +13,8 @@ Read eeprom
 
 Write eeprom
 ./ftdieeprom W kk.hex
+
+
+OTHER
+------
+Another cool tool: http://rtr.ca/ft232r/
