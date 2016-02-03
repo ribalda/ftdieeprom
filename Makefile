@@ -1,6 +1,6 @@
-LDLIBS=-lftdi
-ALL=ftdieeprom
-CFLAGS=-Wall
+LDLIBS += $(shell pkg-config --libs libftdi)
+CFLAGS += -Wall $(shell pkg-config --libs libftdi)
+ALL = ftdieeprom
 
 all:${ALL}
 
