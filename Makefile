@@ -1,5 +1,6 @@
-LDFLAGS=-lftdi
+LDLIBS=-lftdi
 ALL=ftdieeprom
+CFLAGS=-Wall
 
 all:${ALL}
 
