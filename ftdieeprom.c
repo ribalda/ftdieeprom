@@ -20,6 +20,7 @@
 */
 
 #include <stdio.h>
+#include <stdint.h>
 #include <ftdi.h>
 
 #define EEPROM_SIZE 256
