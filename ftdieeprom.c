@@ -93,6 +93,7 @@ int main(int argc, char *argv[]){
 		fix_csum(eeprom_buf,sizeof(eeprom_buf));
 		ftdi_erase_eeprom(&ftdi);
 		ftdi_write_eeprom(&ftdi, eeprom_buf);
+		ftdi_usb_reset(&ftdi);
 	}
 
 	fclose(file);
