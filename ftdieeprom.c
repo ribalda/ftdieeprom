@@ -22,6 +22,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <ftdi.h>
+#include <libusb.h>
 
 #define EEPROM_SIZE 256
 
@@ -93,7 +94,7 @@ int main(int argc, char *argv[]){
 		fix_csum(eeprom_buf,sizeof(eeprom_buf));
 		ftdi_erase_eeprom(&ftdi);
 		ftdi_write_eeprom(&ftdi, eeprom_buf);
-		ftdi_usb_reset(&ftdi);
+		usb_reset(ftdi.usb_dev);
 	}
 
 	fclose(file);

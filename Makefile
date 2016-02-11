@@ -1,5 +1,5 @@
-LDLIBS += $(shell pkg-config --libs libftdi)
-CFLAGS += -Wall $(shell pkg-config --libs libftdi)
+LDLIBS += $(shell pkg-config --libs libftdi libusb)
+CFLAGS += -Wall $(shell pkg-config --cflags libftdi libusb)
 ALL = ftdieeprom
 
 all:${ALL}
